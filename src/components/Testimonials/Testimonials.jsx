@@ -14,7 +14,7 @@ import { Data } from './Data';
 
 const Testimonials = () => {
   return (
-    <section className="testimonial container section" id="testimonial">
+    <section className="testimonial container section" id="testimonials">
         <h2 className="section__title">Testimonials</h2>
         <span className="section__subtitle">What My Clients Say</span>        
 

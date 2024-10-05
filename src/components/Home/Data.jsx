@@ -21,7 +21,6 @@ const Data = () => {
         {/* <img src={ico_send} alt="send icon" style={{marginLeft: '10px', color: 'white'}} /> */}
         <i className="uil uil-message button__icon" style={{marginLeft: '10px', color: 'var(--container-color)'}}></i>
         {/* fill="var(--container-color)" */}
-
       </a>
 
 

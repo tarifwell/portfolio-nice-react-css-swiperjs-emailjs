@@ -47,7 +47,14 @@
 /* Active link */
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    /* color: var(--title-color-dark); */
+    /* color: rgba(186, 179, 158, 1); */
+    color: rgb(154, 146, 120);
+}
+
+/* Change background header */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
 /*=============== BREAKPOINTS ===============*/
