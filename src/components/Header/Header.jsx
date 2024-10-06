@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./Header.css";
+import imgx from '../../assets/logo_nav_1.png';
 
 const Header = () => {
   /*=============== Change Background Header ===============*/
@@ -26,6 +27,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
+          <img src={imgx} alt="logo" />
           @tarifwell
         </a>
 

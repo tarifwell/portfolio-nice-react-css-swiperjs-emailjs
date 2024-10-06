@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './About.css';
-import img_about from '../../assets/images_profile/img_about_01.png';
+import img_about from '../../assets/images_profile/img_profile_02.jpg';
 import doc_cv from '../../assets/docs/doc_my-cv.pdf';
 import Info from './Info';
 import ico_files from '../../assets/icons/ico_files.svg';
