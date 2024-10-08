@@ -1,7 +1,6 @@
 .footer {
     background-color: var(--container-color);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    /* padding-bottom: 2rem; */
 }
 
 .footer__container {
@@ -51,11 +50,12 @@
 .footer__copy {
     display: block;
     margin-top: 4.5rem;
-    color: var(--title-color);
-    /* color: var(--text-color-light); */
+    /* color: var(--title-color); */
+    color: var(--text-color-light);
     text-align: center;
-    font-size: var(--smaller-font-size);
-    /* font-style: italic;     */
+    /* font-size: var(--smaller-font-size); */
+    font-size: var(--small-font-size);    
+    font-style: italic;
 }
 
 /*=============== BREAKPOINTS ===============*/

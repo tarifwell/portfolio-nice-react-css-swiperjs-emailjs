@@ -9,39 +9,44 @@ export const projectsData = [
     {
         id: 1,
         title: "Web Design",
-        category: "web",
+        category: "design",
         image: img_work_1,
+        github: "https://github.com",
+        demo: "#",
     },
     {
         id: 2,
         title: "App Mobile",
-        category: "app",
+        category: "mobile",
         image: img_work_2,
+        github: "https://github.com",
+        demo: "#",
     },
     {
         id: 3,
         title: "Brand Design",
         category: "design",
         image: img_work_3,
+        github: "https://github.com",
+        demo: "#",
     },
     {
         id: 4,
         title: "Web app",
         category: "web",
         image: img_work_4,
+        github: "https://github.com",
+        demo: "#",
     },
     {
         id: 5,
         title: "Web dashboard",
         category: "web",
         image: img_work_5,
+        github: "https://github.com",
+        demo: "#",
     },
 ];
-
-// export const projectsNav = [
-//     'All',
-//     'Portfolio',
-// ]
 
 export const projectsNav = [
     {
@@ -58,21 +63,10 @@ export const projectsNav = [
     },
     {
         id: 4,
+        name: 'mobile',
+    },
+    {
+        id: 5,
         name: 'design',
     },
 ];
-
-// const others = [
-//     {
-//         id: 5,
-//         name: 'Mobile',
-//     },
-//     {
-//         id: 6,
-//         name: 'Desktop',
-//     },
-//     {
-//         id: 7,
-//         name: 'UI/UX',
-//     },
-// ];

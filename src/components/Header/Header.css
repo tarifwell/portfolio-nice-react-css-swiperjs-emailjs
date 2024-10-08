@@ -23,6 +23,16 @@
     font-style: italic;
 }
 
+.nav__logo {
+    font-size: var(--h4-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    /* color: rgb(154, 146, 120); */
+    /* color: rgba(186, 179, 158, 1); */
+    font-weight: var(--font-semi-bold);
+}
+
 .nav__list {
     display: flex;
     column-gap: 2rem;
@@ -138,38 +148,6 @@
     .nav__list {
         column-gap: 0;
     }
-
-    /* .nav__icon {
-        font-size: 0.8rem;
-    }
-
-    .nav__close {
-        right: .3rem;
-    }
-
-    .nav__toggle {
-        font-size: 0.8rem;
-    }
-
-    .nav__link {
-        font-size: var(--small-font-size);
-    }
-
-    .nav__link:hover {
-        color: var(--title-color-dark);
-    }
-
-    .nav__close:hover {
-        color: var(--title-color-dark);
-    }
-
-    .nav__toggle:hover {
-        color: var(--title-color-dark);
-    }
-
-    .nav__icon {
-        font-size: 0.9rem;
-    } */
 }
 
 

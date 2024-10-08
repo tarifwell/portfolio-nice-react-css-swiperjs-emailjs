@@ -6,15 +6,11 @@ const ScrollDown = () => {
   return (
     <div className="home__scroll">
         <a href="#about" className="home__scroll-button button--flex">
-            <img src={ico_scroll} alt="scroll icon" className="home__scroll-icon"/>
-            {/* <i className="uil uil-mouse-alt home__scroll-mouse"></i> */}
-            {/* stroke="var(--title-color)" */}
+            <img src={ico_scroll} alt="scroll icon" className="home__scroll-icon"/>            
 
             <span className="home__scroll-name">Scroll Down</span>
             <i className="uil uil-arrow-down home__scroll-arrow"></i>
-            
         </a>
-        
     </div>
   )
 }

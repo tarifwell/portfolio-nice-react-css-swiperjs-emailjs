@@ -20,7 +20,6 @@
 }
 
 /* Show Scroll Up */
-
 .show-scroll {
     bottom: 3rem;
 }
@@ -37,7 +36,6 @@
     .scrollup__icon {
         font-size: 1.25rem;
     }
-
 }
 
 /* For medium devices */
@@ -46,11 +44,9 @@
     .show-scroll {
         bottom: 4rem;
     }
-
 }
 
 @media screen and (max-width: 576px) {
-
 }
 
 /* For small devices */
@@ -59,5 +55,4 @@
     .scrollup {
         right: 1rem;
     }
-
 }

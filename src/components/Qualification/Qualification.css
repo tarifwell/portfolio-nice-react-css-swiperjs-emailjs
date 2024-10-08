@@ -84,6 +84,7 @@
     transform: translate(6px, -7px);
 }
 
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

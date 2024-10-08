@@ -4,7 +4,7 @@ import './About.css';
 import img_about from '../../assets/images_profile/img_profile_02.jpg';
 import doc_cv from '../../assets/docs/doc_my-cv.pdf';
 import Info from './Info';
-import ico_files from '../../assets/icons/ico_files.svg';
+import ico_file from '../../assets/icons/ico_file.svg';
 
 const About = () => {
   return (
@@ -24,41 +24,10 @@ const About = () => {
 
           <a href={doc_cv} download="" className="button button--flex">
               Download CV
-              {/* <img src={ico_files} alt="files icon" className="button__icon" /> */}
-              {/* fill="var(--container-color)" */}
-              <i className="uil uil-download-alt button__icon"></i>
-              
+              {/* <i class="uil uil-import button__icon"></i> */}
+              {/* <i class='bx bx-file button__icon' ></i> */}
+              <img src={ico_file} alt="files icon" className="button__icon" />
             </a>
-
-          {/* <div className="about__info">
-            <div>
-              <span className="about__info-title">02+</span>
-              <span className="about__info-name">
-                Years of <br /> experience
-              </span>
-            </div>
-
-            <div>
-              <span className="about__info-title">20+</span>
-              <span className="about__info-name">
-                Completed <br /> projects
-              </span>
-            </div>
-
-            <div>
-              <span className="about__info-title">05+</span>
-              <span className="about__info-name">
-                Companies <br /> worked
-              </span>
-            </div>
-          </div>
-
-          <div className="about__buttons">
-            <a href="#contact" className="button button--flex">
-              Contact Me
-              <i className="uil uil-message button__icon"></i>
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

@@ -65,15 +65,14 @@
 }
 
 .contact__form {
-    /* display: grid;
-    row-gap: 2rem; */
+    /* display: grid; */
+    /* row-gap: 2rem; */
     width: 360px;
 }
 
 .contact__form-div {
     position: relative;
     height: 4rem;
-    /* margin-bottom: var(--mb-0-75); */
     margin-bottom: var(--mb-2);
 }
 

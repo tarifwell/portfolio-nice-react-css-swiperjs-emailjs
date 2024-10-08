@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./Header.css";
-import imgx from '../../assets/logo_nav_1.png';
+// import logo from '../../assets/logos/logo_1.png';
 
 const Header = () => {
   /*=============== Change Background Header ===============*/
@@ -24,14 +24,18 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          <img src={imgx} alt="logo" />
-          @tarifwell
+          {/* <img src={logo} alt="logo" style={{height: '16px', marginRight: '5px'}}/> */}
+          {/* <i class='bx bxs-spa' style={{ marginRight: '5px', fontSize: '25px' }}></i> */}
+          {/* <i class='bx bxl-squarespace' style={{ marginRight: '5px', fontSize: '25px' }}></i> */}
+          
+          <i className='bx bx-spa' style={{ marginRight: '5px', fontSize: '25px' }}></i>
+          
+          <span>@tarifwell</span>
         </a>
 
-        {/* <div className="nav__menu"> */}
         <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -42,7 +46,6 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                {/* className="nav__link active-link" */}
                 <i className="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
@@ -99,7 +102,6 @@ const Header = () => {
           ></i>
         </div>
 
-        {/* <div className="nav__toggle"> */}
         <div className="nav__toggle" onClick={() => showMenu(!toggle)}>
           <i className="uil uil-apps"></i>
         </div>

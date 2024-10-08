@@ -1,22 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import './Scrollup.css';
 
 const Scrollup = () => {
 
-  window.addEventListener("scroll", function () {
-    const scrollUp = document.querySelector(".scrollup");
-    
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scrollup (scroll-top) class
-    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
-    else scrollUp.classList.remove('show-scroll');
+  const scrollUpRef = useRef(null);
 
-  });
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+        // Check if the ref is set and modify its class based on scroll position
+        if (scrollUpRef.current) {
+            if (window.scrollY >= 560) {
+                scrollUpRef.current.classList.add('show-scroll');
+            } else {
+                scrollUpRef.current.classList.remove('show-scroll');
+            }
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
 
   return (
-    <a href="#" className="scrollup">
+    <button className="scrollup" onClick={scrollToTop} ref={scrollUpRef}>
       <i className="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    </button>
   )
 }
 

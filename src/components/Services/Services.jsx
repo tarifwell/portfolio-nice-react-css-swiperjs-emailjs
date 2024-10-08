@@ -6,12 +6,6 @@ const Services = () => {
 
   const [toggleState, setToggleState] = useState(0);
 
-    // const showModal = () => {
-    //     const modal = document.querySelector(".services__modal");
-    //     modal.classList.toggle("active");
-    // };
-
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -35,7 +29,6 @@ const Services = () => {
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
 
-          {/* <div className="services__modal"> */}
           <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i className="uil uil-times services__modal-close"  onClick={() => toggleTab(0)}></i>

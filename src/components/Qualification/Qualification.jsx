@@ -16,6 +16,8 @@ const Qualification = () => {
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
+          {/* <div className="qualification__button button--flex qualification__active" 
+                data-target='#experience'> */}
           <div
             className={
               toggleState === 1
@@ -24,11 +26,12 @@ const Qualification = () => {
             }
             onClick={() => toggleTab(1)}
           >
-            {/* <div className="qualification__button button--flex qualification__active" data-target='#experience'> */}
             <i className="uil uil-graduation-cap qualification__icon"></i>
             Education
           </div>
 
+          {/* <div className="qualification__button button--flex qualification__active" 
+                  data-target='#experience'> */}
           <div
             className={
               toggleState === 2
@@ -37,13 +40,15 @@ const Qualification = () => {
             }
             onClick={() => toggleTab(2)}
           >
-            {/* <div className="qualification__button button--flex qualification__active" data-target='#experience'> */}
             <i className="uil uil-briefcase-alt qualification__icon"></i>
             Experience
           </div>
         </div>
 
         <div className="qualification__sections">
+          {/* <div className="qualification__content qualification__active" 
+                  data-content 
+                  id="education"> */}
           <div
             className={
               toggleState === 1
@@ -51,7 +56,6 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
-            {/* <div className="qualification__content qualification__active" data-content id="education"> */}
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">Web Design</h3>
@@ -129,6 +133,9 @@ const Qualification = () => {
             </div>
           </div>
 
+          {/* <div className="qualification__content qualification__active" 
+                  data-content 
+                  id="education"> */}
           <div
             className={
               toggleState === 2
@@ -136,7 +143,6 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
-            {/* <div className="qualification__content qualification__active" data-content id="education"> */}
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">Product Design</h3>

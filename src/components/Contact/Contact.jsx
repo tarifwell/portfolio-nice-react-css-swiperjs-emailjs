@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import "./Contact.css";
-import ico_hand from '../../assets/icons/ico_hand.svg';
 import ico_send from '../../assets/icons/ico_send.svg';
 
 const Contact = () => {
@@ -106,9 +105,10 @@ const Contact = () => {
 
             <button className="button button--flex">
                 Send Message
-                {/* <img src={ico_send} alt="send icon" style={{marginLeft: '10px', color: 'white'}} /> */}
-                <i className="uil uil-message button__icon" style={{marginLeft: '10px', color: 'var(--container-color)'}}></i>
-                {/* fill="var(--container-color)" */}
+                {/* <i className="uil uil-message button__icon"></i> */}
+                {/* <i className='bx bx-paper-plane button__icon' ></i> */}
+                <img src={ico_send} alt="send icon" className="button__icon" />
+                
             </button>
 
             </form>
